@@ -1,5 +1,6 @@
 package com.itacademy.finalproject.ui;
 
+import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
+@Slf4j
 public class SearchTests extends BaseTest {
 
     @Ignore
