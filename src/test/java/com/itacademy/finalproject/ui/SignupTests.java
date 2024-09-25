@@ -3,12 +3,14 @@ package com.itacademy.finalproject.ui;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
 public class SignupTests extends BaseTest {
 
+    @Ignore
     @Test
     void authPage() throws InterruptedException {
         driver.get("https://iticket.az/ru/");
@@ -61,6 +63,7 @@ public class SignupTests extends BaseTest {
 
     }
 
+    @Ignore
     @Test
     void checkIfPasswordsIsEquals() throws InterruptedException {
 

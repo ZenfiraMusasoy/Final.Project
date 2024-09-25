@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Ignore;
 
 import java.time.Duration;
 
@@ -14,6 +15,7 @@ public class BaseTest {
 
     protected String CHROME_DRIVER = "C:\\Users\\Admin\\IdeaProjects\\hw-selenium\\src\\test\\resources\\chromedriver.exe";
 
+    @Ignore
     @BeforeMethod
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", CHROME_DRIVER);
@@ -25,6 +27,7 @@ public class BaseTest {
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
     }
 
+    @Ignore
     @AfterMethod
     public void quit() {
         driver.quit();

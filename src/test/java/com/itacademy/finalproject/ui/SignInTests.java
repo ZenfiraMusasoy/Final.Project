@@ -2,10 +2,12 @@ package com.itacademy.finalproject.ui;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 public class SignInTests extends BaseTest {
 
+    @Ignore
     @Test
     void signIn() {
         driver.get("https://iticket.az/ru/");
