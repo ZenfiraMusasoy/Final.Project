@@ -10,7 +10,7 @@ import java.util.List;
 
 public class SignupTests extends BaseTest {
 
-    @Ignore
+
     @Test
     void authPage() throws InterruptedException {
         driver.get("https://iticket.az/ru/");
@@ -63,7 +63,7 @@ public class SignupTests extends BaseTest {
 
     }
 
-    @Ignore
+
     @Test
     void checkIfPasswordsIsEquals() throws InterruptedException {
 

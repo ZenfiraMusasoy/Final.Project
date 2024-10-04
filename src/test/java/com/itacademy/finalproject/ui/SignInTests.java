@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class SignInTests extends BaseTest {
 
-    @Ignore
+
     @Test
     void signIn() {
         driver.get("https://iticket.az/ru/");

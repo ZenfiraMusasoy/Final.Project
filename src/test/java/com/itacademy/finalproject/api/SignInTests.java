@@ -12,6 +12,7 @@ public class SignInTests {
 
     @Test
     public void validationTest() {
+        log.info("Test");
         RestAssured.baseURI = "https://api.iticket.az";
 
         String requestBody = """

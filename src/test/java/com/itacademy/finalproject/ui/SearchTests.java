@@ -1,22 +1,25 @@
 package com.itacademy.finalproject.ui;
 
-import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-@Slf4j
+
 public class SearchTests extends BaseTest {
 
-    @Ignore
+    private static final Logger log = LoggerFactory.getLogger(SearchTests.class);
+
+
     @Test
     void search() {
 
         driver.get("https://iticket.az/ru/");
-
+        log.info("Search started");
         WebElement searchButton = driver.findElement(By.cssSelector(".search.ico-btn"));
         searchButton.click();
 

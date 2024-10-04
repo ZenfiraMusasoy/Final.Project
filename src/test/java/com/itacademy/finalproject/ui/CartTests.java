@@ -16,7 +16,7 @@ import java.util.List;
 
 public class CartTests extends BaseTest {
 
-    @Ignore
+
     @Test
     void addToCartTest() throws InterruptedException {
         driver.get("https://iticket.az/ru/products");
@@ -42,7 +42,7 @@ public class CartTests extends BaseTest {
         }
     }
 
-    @Ignore
+
     @Test
     void cart() throws InterruptedException {
 

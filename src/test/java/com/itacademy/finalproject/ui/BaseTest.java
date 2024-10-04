@@ -13,9 +13,9 @@ public class BaseTest {
 
     protected WebDriver driver;
 
-    protected String CHROME_DRIVER = "C:\\Users\\Admin\\IdeaProjects\\hw-selenium\\src\\test\\resources\\chromedriver.exe";
+    protected String CHROME_DRIVER = "C:\\Users\\Admin\\Downloads\\chromedriver-win64\\chromedriver.exe";
 
-    @Ignore
+
     @BeforeMethod
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", CHROME_DRIVER);
@@ -27,7 +27,7 @@ public class BaseTest {
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
     }
 
-    @Ignore
+
     @AfterMethod
     public void quit() {
         driver.quit();
