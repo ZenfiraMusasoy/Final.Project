@@ -3,16 +3,13 @@ package com.itacademy.finalproject.api;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import lombok.extern.slf4j.Slf4j;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-@Slf4j
 public class SignInTests {
 
     @Test
     public void validationTest() {
-        log.info("Test");
         RestAssured.baseURI = "https://api.iticket.az";
 
         String requestBody = """

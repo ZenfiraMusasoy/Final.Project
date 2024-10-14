@@ -3,13 +3,11 @@ package com.itacademy.finalproject.ui;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
 public class SignupTests extends BaseTest {
-
 
     @Test
     void authPage() throws InterruptedException {
@@ -62,7 +60,6 @@ public class SignupTests extends BaseTest {
         submitButton.submit();
 
     }
-
 
     @Test
     void checkIfPasswordsIsEquals() throws InterruptedException {
